@@ -1,12 +1,8 @@
-## Welcome to GitHub Pages
+## Welcome to GordanZhang's GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/GordanZhang/WMS/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+这是一个仓库管理系统，界面使用winform开发，连接了SQL Server数据库
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 Syntax highlighted code block
