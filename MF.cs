@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using System.Data.SqlClient;
 
 namespace SQLServerTest
 {
@@ -104,6 +105,14 @@ namespace SQLServerTest
         public void buttonSelect_Click(object sender, EventArgs e)
         {
             MessageBox.Show("查询完成", "查询结果", MessageBoxButtons.OK);
+            string sql = "select * from stock where sname ='"+ textBoxStockName +"'";
+            SqlConnection conn = new SqlConnection("server=(local);database=jingdie;user=sa;pwd=123456");
+            conn.Open();
+            SqlDataAdapter cmd = new SqlDataAdapter(sql, conn);
+            DataSet ds = new DataSet();
+            cmd.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
+            
         }
 
         private void buttonInfoSelect_Click(object sender, EventArgs e)

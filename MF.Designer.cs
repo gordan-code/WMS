@@ -57,34 +57,36 @@
             this.buttonOutBank = new System.Windows.Forms.Button();
             this.buttonInBank = new System.Windows.Forms.Button();
             this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonDistrubition = new System.Windows.Forms.Button();
             this.navBarGroupControlContainer3 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-            this.buttonModifyUserRight = new System.Windows.Forms.Button();
-            this.buttonDelUser = new System.Windows.Forms.Button();
-            this.buttonUpdatePwd = new System.Windows.Forms.Button();
             this.buttonUserManagement = new System.Windows.Forms.Button();
             this.navBarGroupControlContainer4 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-            this.buttonEditOrder = new System.Windows.Forms.Button();
-            this.buttonCheckOrder = new System.Windows.Forms.Button();
+            this.buttonPurchase = new System.Windows.Forms.Button();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroup5 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.buttonModifyUserRight = new System.Windows.Forms.Button();
+            this.buttonDelUser = new System.Windows.Forms.Button();
+            this.buttonUpdatePwd = new System.Windows.Forms.Button();
+            this.buttonEditOrder = new System.Windows.Forms.Button();
+            this.buttonCheckOrder = new System.Windows.Forms.Button();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonSelect = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxSupplier = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxInBookTime2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxInbookTime1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxStockName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBoxCargo = new System.Windows.Forms.TextBox();
+            this.textBoxStockId = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBoxTopic = new System.Windows.Forms.PictureBox();
             this.xtraTabControlSelect = new DevExpress.XtraTab.XtraTabControl();
@@ -94,10 +96,16 @@
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabPage5 = new DevExpress.XtraTab.XtraTabPage();
             this.xtraTabPage6 = new DevExpress.XtraTab.XtraTabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.xtraTabPage7 = new DevExpress.XtraTab.XtraTabPage();
-            this.buttonDistrubition = new System.Windows.Forms.Button();
-            this.buttonPurchase = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonAddUser = new System.Windows.Forms.Button();
+            this.textBoxUser = new System.Windows.Forms.TextBox();
+            this.textBoxPwd = new System.Windows.Forms.TextBox();
+            this.labelUser = new System.Windows.Forms.Label();
+            this.labelPwd = new System.Windows.Forms.Label();
+            this.comboBoxaRole = new System.Windows.Forms.ComboBox();
+            this.labelRole = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
@@ -117,6 +125,7 @@
             this.xtraTabPage3.SuspendLayout();
             this.xtraTabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager2
@@ -293,7 +302,7 @@
             // 
             // navBarControl1
             // 
-            this.navBarControl1.ActiveGroup = this.navBarGroup4;
+            this.navBarControl1.ActiveGroup = this.navBarGroup3;
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer1);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer2);
             this.navBarControl1.Controls.Add(this.navBarGroupControlContainer3);
@@ -321,7 +330,6 @@
             // 
             this.navBarGroup4.Caption = "信息查询";
             this.navBarGroup4.ControlContainer = this.navBarGroupControlContainer5;
-            this.navBarGroup4.Expanded = true;
             this.navBarGroup4.GroupClientHeight = 80;
             this.navBarGroup4.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
             this.navBarGroup4.Name = "navBarGroup4";
@@ -337,9 +345,10 @@
             // 
             // buttonInfoSelect
             // 
-            this.buttonInfoSelect.Location = new System.Drawing.Point(12, 43);
+            this.buttonInfoSelect.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonInfoSelect.Location = new System.Drawing.Point(0, 0);
             this.buttonInfoSelect.Name = "buttonInfoSelect";
-            this.buttonInfoSelect.Size = new System.Drawing.Size(111, 32);
+            this.buttonInfoSelect.Size = new System.Drawing.Size(156, 51);
             this.buttonInfoSelect.TabIndex = 0;
             this.buttonInfoSelect.Text = "信息查询";
             this.buttonInfoSelect.UseVisualStyleBackColor = true;
@@ -398,25 +407,16 @@
             this.navBarGroupControlContainer2.Size = new System.Drawing.Size(156, 349);
             this.navBarGroupControlContainer2.TabIndex = 1;
             // 
-            // button5
+            // buttonDistrubition
             // 
-            this.button5.Location = new System.Drawing.Point(853, 94);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(117, 41);
-            this.button5.TabIndex = 1;
-            this.button5.Text = "捡货";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(853, 33);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 36);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "出库核对";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonDistrubition.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonDistrubition.Location = new System.Drawing.Point(0, 0);
+            this.buttonDistrubition.Name = "buttonDistrubition";
+            this.buttonDistrubition.Size = new System.Drawing.Size(156, 39);
+            this.buttonDistrubition.TabIndex = 0;
+            this.buttonDistrubition.Text = "配送管理";
+            this.buttonDistrubition.UseVisualStyleBackColor = true;
+            this.buttonDistrubition.Click += new System.EventHandler(this.buttonDistrubition_Click);
             // 
             // navBarGroupControlContainer3
             // 
@@ -426,36 +426,6 @@
             this.navBarGroupControlContainer3.Name = "navBarGroupControlContainer3";
             this.navBarGroupControlContainer3.Size = new System.Drawing.Size(156, 349);
             this.navBarGroupControlContainer3.TabIndex = 2;
-            // 
-            // buttonModifyUserRight
-            // 
-            this.buttonModifyUserRight.Location = new System.Drawing.Point(807, 94);
-            this.buttonModifyUserRight.Name = "buttonModifyUserRight";
-            this.buttonModifyUserRight.Size = new System.Drawing.Size(121, 36);
-            this.buttonModifyUserRight.TabIndex = 3;
-            this.buttonModifyUserRight.Text = "修改用户权限";
-            this.buttonModifyUserRight.UseVisualStyleBackColor = true;
-            this.buttonModifyUserRight.Click += new System.EventHandler(this.buttonModifyUserRight_Click);
-            // 
-            // buttonDelUser
-            // 
-            this.buttonDelUser.Location = new System.Drawing.Point(807, 152);
-            this.buttonDelUser.Name = "buttonDelUser";
-            this.buttonDelUser.Size = new System.Drawing.Size(121, 40);
-            this.buttonDelUser.TabIndex = 2;
-            this.buttonDelUser.Text = "删除用户";
-            this.buttonDelUser.UseVisualStyleBackColor = true;
-            this.buttonDelUser.Click += new System.EventHandler(this.buttonDelUser_Click);
-            // 
-            // buttonUpdatePwd
-            // 
-            this.buttonUpdatePwd.Location = new System.Drawing.Point(807, 42);
-            this.buttonUpdatePwd.Name = "buttonUpdatePwd";
-            this.buttonUpdatePwd.Size = new System.Drawing.Size(121, 34);
-            this.buttonUpdatePwd.TabIndex = 1;
-            this.buttonUpdatePwd.Text = "修改密码";
-            this.buttonUpdatePwd.UseVisualStyleBackColor = true;
-            this.buttonUpdatePwd.Click += new System.EventHandler(this.buttonUpdatePwd_Click);
             // 
             // buttonUserManagement
             // 
@@ -477,25 +447,16 @@
             this.navBarGroupControlContainer4.Size = new System.Drawing.Size(156, 349);
             this.navBarGroupControlContainer4.TabIndex = 3;
             // 
-            // buttonEditOrder
+            // buttonPurchase
             // 
-            this.buttonEditOrder.Location = new System.Drawing.Point(851, 79);
-            this.buttonEditOrder.Name = "buttonEditOrder";
-            this.buttonEditOrder.Size = new System.Drawing.Size(107, 40);
-            this.buttonEditOrder.TabIndex = 1;
-            this.buttonEditOrder.Text = "编辑订单";
-            this.buttonEditOrder.UseVisualStyleBackColor = true;
-            this.buttonEditOrder.Click += new System.EventHandler(this.buttonEditOrder_Click);
-            // 
-            // buttonCheckOrder
-            // 
-            this.buttonCheckOrder.Location = new System.Drawing.Point(850, 19);
-            this.buttonCheckOrder.Name = "buttonCheckOrder";
-            this.buttonCheckOrder.Size = new System.Drawing.Size(108, 38);
-            this.buttonCheckOrder.TabIndex = 0;
-            this.buttonCheckOrder.Text = "查看订单";
-            this.buttonCheckOrder.UseVisualStyleBackColor = true;
-            this.buttonCheckOrder.Click += new System.EventHandler(this.buttonCheckOrder_Click);
+            this.buttonPurchase.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonPurchase.Location = new System.Drawing.Point(0, 0);
+            this.buttonPurchase.Name = "buttonPurchase";
+            this.buttonPurchase.Size = new System.Drawing.Size(156, 42);
+            this.buttonPurchase.TabIndex = 0;
+            this.buttonPurchase.Text = "采购管理";
+            this.buttonPurchase.UseVisualStyleBackColor = true;
+            this.buttonPurchase.Click += new System.EventHandler(this.buttonPurchase_Click);
             // 
             // navBarGroup1
             // 
@@ -538,9 +499,80 @@
             // 
             this.navBarGroup3.Caption = "用户管理";
             this.navBarGroup3.ControlContainer = this.navBarGroupControlContainer3;
+            this.navBarGroup3.Expanded = true;
             this.navBarGroup3.GroupClientHeight = 349;
             this.navBarGroup3.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
             this.navBarGroup3.Name = "navBarGroup3";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(853, 94);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(117, 41);
+            this.button5.TabIndex = 1;
+            this.button5.Text = "捡货";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(853, 33);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(120, 36);
+            this.button4.TabIndex = 0;
+            this.button4.Text = "出库核对";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // buttonModifyUserRight
+            // 
+            this.buttonModifyUserRight.Location = new System.Drawing.Point(807, 94);
+            this.buttonModifyUserRight.Name = "buttonModifyUserRight";
+            this.buttonModifyUserRight.Size = new System.Drawing.Size(121, 36);
+            this.buttonModifyUserRight.TabIndex = 3;
+            this.buttonModifyUserRight.Text = "修改用户权限";
+            this.buttonModifyUserRight.UseVisualStyleBackColor = true;
+            this.buttonModifyUserRight.Click += new System.EventHandler(this.buttonModifyUserRight_Click);
+            // 
+            // buttonDelUser
+            // 
+            this.buttonDelUser.Location = new System.Drawing.Point(656, 97);
+            this.buttonDelUser.Name = "buttonDelUser";
+            this.buttonDelUser.Size = new System.Drawing.Size(113, 33);
+            this.buttonDelUser.TabIndex = 2;
+            this.buttonDelUser.Text = "删除用户";
+            this.buttonDelUser.UseVisualStyleBackColor = true;
+            this.buttonDelUser.Click += new System.EventHandler(this.buttonDelUser_Click);
+            // 
+            // buttonUpdatePwd
+            // 
+            this.buttonUpdatePwd.Location = new System.Drawing.Point(807, 42);
+            this.buttonUpdatePwd.Name = "buttonUpdatePwd";
+            this.buttonUpdatePwd.Size = new System.Drawing.Size(121, 34);
+            this.buttonUpdatePwd.TabIndex = 1;
+            this.buttonUpdatePwd.Text = "修改密码";
+            this.buttonUpdatePwd.UseVisualStyleBackColor = true;
+            this.buttonUpdatePwd.Click += new System.EventHandler(this.buttonUpdatePwd_Click);
+            // 
+            // buttonEditOrder
+            // 
+            this.buttonEditOrder.Location = new System.Drawing.Point(851, 79);
+            this.buttonEditOrder.Name = "buttonEditOrder";
+            this.buttonEditOrder.Size = new System.Drawing.Size(107, 40);
+            this.buttonEditOrder.TabIndex = 1;
+            this.buttonEditOrder.Text = "编辑订单";
+            this.buttonEditOrder.UseVisualStyleBackColor = true;
+            this.buttonEditOrder.Click += new System.EventHandler(this.buttonEditOrder_Click);
+            // 
+            // buttonCheckOrder
+            // 
+            this.buttonCheckOrder.Location = new System.Drawing.Point(850, 19);
+            this.buttonCheckOrder.Name = "buttonCheckOrder";
+            this.buttonCheckOrder.Size = new System.Drawing.Size(108, 38);
+            this.buttonCheckOrder.TabIndex = 0;
+            this.buttonCheckOrder.Text = "查看订单";
+            this.buttonCheckOrder.UseVisualStyleBackColor = true;
+            this.buttonCheckOrder.Click += new System.EventHandler(this.buttonCheckOrder_Click);
             // 
             // xtraTabbedMdiManager1
             // 
@@ -550,15 +582,15 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.buttonSelect);
-            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.comboBoxSupplier);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.comboBoxInBookTime2);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.comboBoxInbookTime1);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBoxStockName);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBoxCargo);
+            this.panel1.Controls.Add(this.textBoxStockId);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(17, 16);
             this.panel1.Name = "panel1";
@@ -575,10 +607,10 @@
             this.buttonSelect.UseVisualStyleBackColor = true;
             this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
             // 
-            // comboBox3
+            // comboBoxSupplier
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.comboBoxSupplier.FormattingEnabled = true;
+            this.comboBoxSupplier.Items.AddRange(new object[] {
             "太原重型机械有限公司",
             "太原科技大学",
             "华为",
@@ -587,10 +619,10 @@
             "小米",
             "今日头条",
             "幻电"});
-            this.comboBox3.Location = new System.Drawing.Point(408, 16);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(132, 26);
-            this.comboBox3.TabIndex = 9;
+            this.comboBoxSupplier.Location = new System.Drawing.Point(408, 16);
+            this.comboBoxSupplier.Name = "comboBoxSupplier";
+            this.comboBoxSupplier.Size = new System.Drawing.Size(132, 26);
+            this.comboBoxSupplier.TabIndex = 9;
             // 
             // label7
             // 
@@ -601,10 +633,10 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "供货商";
             // 
-            // comboBox2
+            // comboBoxInBookTime2
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxInBookTime2.FormattingEnabled = true;
+            this.comboBoxInBookTime2.Items.AddRange(new object[] {
             "2017.1",
             "2017.2",
             "2017.3",
@@ -616,10 +648,10 @@
             "2017.9",
             "2017.10",
             "2017.11"});
-            this.comboBox2.Location = new System.Drawing.Point(213, 115);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(91, 26);
-            this.comboBox2.TabIndex = 7;
+            this.comboBoxInBookTime2.Location = new System.Drawing.Point(213, 115);
+            this.comboBoxInBookTime2.Name = "comboBoxInBookTime2";
+            this.comboBoxInBookTime2.Size = new System.Drawing.Size(91, 26);
+            this.comboBoxInBookTime2.TabIndex = 7;
             // 
             // label6
             // 
@@ -630,25 +662,13 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "至";
             // 
-            // comboBox1
+            // comboBoxInbookTime1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "2017.1",
-            "2017.2",
-            "2017.3",
-            "2017.4",
-            "2017.5",
-            "2017.6",
-            "2017.7",
-            "2017.8",
-            "2017.9",
-            "2017.10",
-            "2017.11"});
-            this.comboBox1.Location = new System.Drawing.Point(102, 115);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(76, 26);
-            this.comboBox1.TabIndex = 5;
+            this.comboBoxInbookTime1.FormattingEnabled = true;
+            this.comboBoxInbookTime1.Location = new System.Drawing.Point(102, 115);
+            this.comboBoxInbookTime1.Name = "comboBoxInbookTime1";
+            this.comboBoxInbookTime1.Size = new System.Drawing.Size(76, 26);
+            this.comboBoxInbookTime1.TabIndex = 5;
             // 
             // label5
             // 
@@ -659,12 +679,12 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "入库时间";
             // 
-            // textBox2
+            // textBoxStockName
             // 
-            this.textBox2.Location = new System.Drawing.Point(102, 67);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(202, 26);
-            this.textBox2.TabIndex = 3;
+            this.textBoxStockName.Location = new System.Drawing.Point(102, 67);
+            this.textBoxStockName.Name = "textBoxStockName";
+            this.textBoxStockName.Size = new System.Drawing.Size(202, 26);
+            this.textBoxStockName.TabIndex = 3;
             // 
             // label4
             // 
@@ -675,12 +695,12 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "商品名称";
             // 
-            // textBoxCargo
+            // textBoxStockId
             // 
-            this.textBoxCargo.Location = new System.Drawing.Point(102, 16);
-            this.textBoxCargo.Name = "textBoxCargo";
-            this.textBoxCargo.Size = new System.Drawing.Size(202, 26);
-            this.textBoxCargo.TabIndex = 1;
+            this.textBoxStockId.Location = new System.Drawing.Point(102, 16);
+            this.textBoxStockId.Name = "textBoxStockId";
+            this.textBoxStockId.Size = new System.Drawing.Size(202, 26);
+            this.textBoxStockId.TabIndex = 1;
             // 
             // label3
             // 
@@ -726,6 +746,13 @@
             // 
             // xtraTabPage2
             // 
+            this.xtraTabPage2.Controls.Add(this.labelRole);
+            this.xtraTabPage2.Controls.Add(this.comboBoxaRole);
+            this.xtraTabPage2.Controls.Add(this.labelPwd);
+            this.xtraTabPage2.Controls.Add(this.labelUser);
+            this.xtraTabPage2.Controls.Add(this.textBoxPwd);
+            this.xtraTabPage2.Controls.Add(this.textBoxUser);
+            this.xtraTabPage2.Controls.Add(this.buttonAddUser);
             this.xtraTabPage2.Controls.Add(this.buttonDelUser);
             this.xtraTabPage2.Controls.Add(this.buttonModifyUserRight);
             this.xtraTabPage2.Controls.Add(this.buttonUpdatePwd);
@@ -761,6 +788,12 @@
             this.xtraTabPage6.Size = new System.Drawing.Size(1003, 215);
             this.xtraTabPage6.Text = "出库管理";
             // 
+            // xtraTabPage7
+            // 
+            this.xtraTabPage7.Name = "xtraTabPage7";
+            this.xtraTabPage7.Size = new System.Drawing.Size(1003, 215);
+            this.xtraTabPage7.Text = "收支管理";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::SQLServerTest.Properties.Resources.工作界面_0002s_0002_虚化背景;
@@ -771,33 +804,77 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // xtraTabPage7
+            // dataGridView1
             // 
-            this.xtraTabPage7.Name = "xtraTabPage7";
-            this.xtraTabPage7.Size = new System.Drawing.Size(1003, 215);
-            this.xtraTabPage7.Text = "收支管理";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(319, 400);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(677, 161);
+            this.dataGridView1.TabIndex = 31;
             // 
-            // buttonDistrubition
+            // buttonAddUser
             // 
-            this.buttonDistrubition.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonDistrubition.Location = new System.Drawing.Point(0, 0);
-            this.buttonDistrubition.Name = "buttonDistrubition";
-            this.buttonDistrubition.Size = new System.Drawing.Size(156, 39);
-            this.buttonDistrubition.TabIndex = 0;
-            this.buttonDistrubition.Text = "配送管理";
-            this.buttonDistrubition.UseVisualStyleBackColor = true;
-            this.buttonDistrubition.Click += new System.EventHandler(this.buttonDistrubition_Click);
+            this.buttonAddUser.Location = new System.Drawing.Point(656, 42);
+            this.buttonAddUser.Name = "buttonAddUser";
+            this.buttonAddUser.Size = new System.Drawing.Size(113, 33);
+            this.buttonAddUser.TabIndex = 4;
+            this.buttonAddUser.Text = "添加用户";
+            this.buttonAddUser.UseVisualStyleBackColor = true;
             // 
-            // buttonPurchase
+            // textBoxUser
             // 
-            this.buttonPurchase.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonPurchase.Location = new System.Drawing.Point(0, 0);
-            this.buttonPurchase.Name = "buttonPurchase";
-            this.buttonPurchase.Size = new System.Drawing.Size(156, 42);
-            this.buttonPurchase.TabIndex = 0;
-            this.buttonPurchase.Text = "采购管理";
-            this.buttonPurchase.UseVisualStyleBackColor = true;
-            this.buttonPurchase.Click += new System.EventHandler(this.buttonPurchase_Click);
+            this.textBoxUser.Location = new System.Drawing.Point(176, 32);
+            this.textBoxUser.Name = "textBoxUser";
+            this.textBoxUser.Size = new System.Drawing.Size(317, 26);
+            this.textBoxUser.TabIndex = 5;
+            // 
+            // textBoxPwd
+            // 
+            this.textBoxPwd.Location = new System.Drawing.Point(176, 94);
+            this.textBoxPwd.Name = "textBoxPwd";
+            this.textBoxPwd.Size = new System.Drawing.Size(317, 26);
+            this.textBoxPwd.TabIndex = 6;
+            // 
+            // labelUser
+            // 
+            this.labelUser.AutoSize = true;
+            this.labelUser.Location = new System.Drawing.Point(80, 38);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(53, 18);
+            this.labelUser.TabIndex = 7;
+            this.labelUser.Text = "用户名";
+            // 
+            // labelPwd
+            // 
+            this.labelPwd.AutoSize = true;
+            this.labelPwd.Location = new System.Drawing.Point(95, 97);
+            this.labelPwd.Name = "labelPwd";
+            this.labelPwd.Size = new System.Drawing.Size(38, 18);
+            this.labelPwd.TabIndex = 8;
+            this.labelPwd.Text = "密码";
+            // 
+            // comboBoxaRole
+            // 
+            this.comboBoxaRole.FormattingEnabled = true;
+            this.comboBoxaRole.Items.AddRange(new object[] {
+            "管理员",
+            "采购员",
+            "配送员",
+            "客户"});
+            this.comboBoxaRole.Location = new System.Drawing.Point(176, 152);
+            this.comboBoxaRole.Name = "comboBoxaRole";
+            this.comboBoxaRole.Size = new System.Drawing.Size(127, 26);
+            this.comboBoxaRole.TabIndex = 9;
+            // 
+            // labelRole
+            // 
+            this.labelRole.AutoSize = true;
+            this.labelRole.Location = new System.Drawing.Point(89, 159);
+            this.labelRole.Name = "labelRole";
+            this.labelRole.Size = new System.Drawing.Size(38, 18);
+            this.labelRole.TabIndex = 10;
+            this.labelRole.Text = "权限";
             // 
             // MF
             // 
@@ -806,6 +883,7 @@
             this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Zoom;
             this.BackgroundImageStore = global::SQLServerTest.Properties.Resources.工作界面_0002s_0002_虚化背景;
             this.ClientSize = new System.Drawing.Size(1166, 674);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.xtraTabControlSelect);
             this.Controls.Add(this.pictureBoxTopic);
             this.Controls.Add(this.navBarControl1);
@@ -836,9 +914,11 @@
             this.xtraTabControlSelect.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             this.xtraTabPage2.ResumeLayout(false);
+            this.xtraTabPage2.PerformLayout();
             this.xtraTabPage3.ResumeLayout(false);
             this.xtraTabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -885,15 +965,15 @@
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup4;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBoxSupplier;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxInBookTime2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxInbookTime1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxStockName;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBoxCargo;
+        private System.Windows.Forms.TextBox textBoxStockId;
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer5;
         private System.Windows.Forms.Button button5;
@@ -914,5 +994,13 @@
         private DevExpress.XtraTab.XtraTabPage xtraTabPage7;
         private System.Windows.Forms.Button buttonDistrubition;
         private System.Windows.Forms.Button buttonPurchase;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox comboBoxaRole;
+        private System.Windows.Forms.Label labelPwd;
+        private System.Windows.Forms.Label labelUser;
+        private System.Windows.Forms.TextBox textBoxPwd;
+        private System.Windows.Forms.TextBox textBoxUser;
+        private System.Windows.Forms.Button buttonAddUser;
+        private System.Windows.Forms.Label labelRole;
     }
 }

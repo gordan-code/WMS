@@ -19,31 +19,37 @@ namespace SQLServerTest
         }
         //声明自适应类实例
         AutoSizeFormClass asc = new AutoSizeFormClass();
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
-            string userid = textBoxUserID.Text;
-            string pwd = textBoxPwd.Text;
-            //第一步 连接到数据库
-            SqlConnection conn = new SqlConnection("server=(local);database=kingdee;user=sa;pwd=123456");
-            conn.Open();
-            //第二步 写执行语句
-            SqlCommand cmd = conn.CreateCommand();//通过conn创建sqlcommand对象
-            cmd.CommandText = "select * from UserTable where userid='" + userid + "' and pwd='" + pwd + "'";
-            SqlDataReader dr = cmd.ExecuteReader();//执行查询，返回sqldatareader对象
-            if (dr.Read())          
+            ClassMain mainTest = new ClassMain();
+            if(mainTest.checkin(textBoxUserID.Text.ToString(),textBoxPwd.Text.ToString()))
             {
-                MF mf = new MF();
-                this.Visible = false;
-                mf.ShowDialog();
-                this.Dispose();
-                this.Close();
+                string role = mainTest.getRole();
+                if(role.Equals("管理员"))
+                {
+                    MF mf = new MF();
+                    this.Visible = false;
+                    mf.ShowDialog();
+                    this.Dispose();
+                    this.Close(); 
+                }
+                else if(role.Equals("采购员"))
+                {
+                    MessageBox.Show("采购员");
+                }
+                else if(role.Equals("配送员"))
+                {
+                    MessageBox.Show("配送员");
+                }
+                else if(role.Equals("客户"))
+                {
+                    MessageBox.Show("客户");
+                }
             }
-            else
-            {
-                MessageBox.Show("Password or Userid is incorrect ", "Prompt message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            conn.Close();
+
+
+            mainTest.closecon();
         }
 
         private void buttonAbout_Click(object sender, EventArgs e)
@@ -60,6 +66,19 @@ namespace SQLServerTest
         private void Login_Load(object sender, EventArgs e)
         {
             asc.controllInitializeSize(this);
+            
+            textBoxUserID.BackColor = Color.FromArgb(122, 191, 196);
+            textBoxPwd.BackColor = Color.FromArgb(122, 191, 196);
+        }
+
+        private void buttonLogin_MouseMove(object sender, MouseEventArgs e)
+        {
+            //buttonLogin.BackgroundImage = new Bitmap("/image/工作界面_0000s_0000s_0000_login_press.png");
+        }
+
+        private void buttonLogin_MouseLeave(object sender, EventArgs e)
+        {
+            //buttonLogin.BackgroundImage = new Bitmap("/image/工作界面_0000s_0000s_0001_login_press.png");
         }
     }
 }
