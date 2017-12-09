@@ -118,7 +118,124 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="工作界面_0002s_0004_工具图标" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0004_工具图标.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="关于我们" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\关于我们.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="vkom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vkom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="入库24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\入库24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0002s_0007_帮助图标1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0007_帮助图标1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0002s_0007_帮助图标" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0007_帮助图标.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0002s_0000_系统图标_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0000_系统图标_press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="出库24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\出库24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0041446689710" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0041446689710.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0002s_0001_标题栏" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0001_标题栏.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0000s_0003_功能选择面板" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0000s_0003_功能选择面板.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="关于" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\关于.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0002s_0005_工具" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0005_工具.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0001s_0002_删除图标" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0001s_0002_删除图标.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="编辑" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\编辑.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0002s_0002_虚化背景" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0002_虚化背景.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0002s_0002_系统" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0002_系统.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0000s_0000s_0001_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0000s_0000s_0001_login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0001s_0003_打印图标" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0001s_0003_打印图标.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0002s_0001_标题栏1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0001_标题栏1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0000s_0000_收起图标" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0000s_0000_收起图标.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="用户24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\用户24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0002s_0003_工具图标_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0003_工具图标_press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="配送24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\配送24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="采购16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\采购16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="information_24px_1154431_easyicon.net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\information_24px_1154431_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0001s_0001_撤销图标" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0001s_0001_撤销图标.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="大logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\大logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0001s_0000_文件图标" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0001s_0000_文件图标.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0000s_0001s_0001_输入框2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0000s_0001s_0001_输入框2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delivery_25.963488843813px_1173529_easyicon.net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delivery_25.963488843813px_1173529_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0000s_0001_展开图标" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0000s_0001_展开图标.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="password_24px_1169936_easyicon.net" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password_24px_1169936_easyicon.net.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0000s_0000s_0000_login_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0000s_0000s_0000_login_press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0002s_0006_帮助图标_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0006_帮助图标_press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="查询24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\查询24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="采购24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\采购24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0002s_0008_帮助" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0008_帮助.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="工作界面_0002s_0001_系统图标" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\工作界面_0002s_0001_系统图标.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="关于 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\关于 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

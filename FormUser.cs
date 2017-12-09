@@ -12,9 +12,24 @@ namespace SQLServerTest
 {
     public partial class FormUser : Form
     {
+        private string id;
         public FormUser()
         {
             InitializeComponent();
+        }
+
+        public void Setid(string id)
+        {
+            this.id = id;
+        }
+        private void buttonPurchase_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonCheck_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

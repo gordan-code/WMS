@@ -23,33 +23,59 @@ namespace SQLServerTest
         private void button1_Click(object sender, EventArgs e)
         {
             ClassMain mainTest = new ClassMain();
-            if(mainTest.checkin(textBoxUserID.Text.ToString(),textBoxPwd.Text.ToString()))
+            if(mainTest.Checkin(textBoxUserID.Text,textBoxPwd.Text))
             {
-                string role = mainTest.getRole();
+                string role = mainTest.GetRole();
                 if(role.Equals("管理员"))
                 {
+                    /*
                     MF mf = new MF();
                     this.Visible = false;
                     mf.ShowDialog();
                     this.Dispose();
                     this.Close(); 
+                    */
+                    FormMain fm = new FormMain();
+                    this.Visible = false;
+                    fm.ShowDialog();
+                    this.Dispose();
+                    this.Close();
                 }
                 else if(role.Equals("采购员"))
                 {
-                    MessageBox.Show("采购员");
+
+                    FormBuyer fb = new FormBuyer();
+                    this.Visible = false;
+                    fb.Setid(textBoxUserID.Text);
+                    fb.ShowDialog();
+                    
+                    this.Dispose();
+                    this.Close();
                 }
                 else if(role.Equals("配送员"))
                 {
-                    MessageBox.Show("配送员");
+                    FormDeliveryStaff fds = new FormDeliveryStaff();
+                    this.Visible = false;
+                    fds.Setid(textBoxUserID.Text);
+                    fds.ShowDialog();
+                    this.Dispose();
+                    this.Close();
                 }
+                /*
                 else if(role.Equals("客户"))
                 {
-                    MessageBox.Show("客户");
+                    FormUser fu=new FormUser();
+                    this.Visible = false;
+                    fu.Setid(textBoxUserID.Text);
+                    fu.ShowDialog();
+                    this.Dispose();
+                    this.Close();
                 }
+                */
             }
 
 
-            mainTest.closecon();
+            mainTest.Closecon();
         }
 
         private void buttonAbout_Click(object sender, EventArgs e)

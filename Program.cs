@@ -21,7 +21,7 @@ namespace SQLServerTest
             if (login.DialogResult == DialogResult.OK)
             {
                 login.Dispose();
-                Application.Run(new MF());
+                Application.Run(new FormMain());
             }
             else if (login.DialogResult == DialogResult.Cancel)
             {

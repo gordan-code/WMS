@@ -11,6 +11,23 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\Programming\金蝶\发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -30,6 +47,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C4B320521D04EEA85E43DF44A98C9B7651437B2A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SQLServerTest_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -58,28 +87,103 @@
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
     <Compile Include="AutoSizeFormClass.cs" />
+    <Compile Include="ClassMain.cs" />
+    <Compile Include="FormBuyer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuyer.Designer.cs">
+      <DependentUpon>FormBuyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangePwd.Designer.cs">
+      <DependentUpon>FormChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangePwdAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangePwdAdmin.Designer.cs">
+      <DependentUpon>FormChangePwdAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangeUserRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangeUserRole.Designer.cs">
+      <DependentUpon>FormChangeUserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeliveryStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeliveryStaff.Designer.cs">
+      <DependentUpon>FormDeliveryStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDelUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDelUser.Designer.cs">
+      <DependentUpon>FormDelUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jingdieDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jingdieDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MF.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MF.Designer.cs">
-      <DependentUpon>MF.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdatePwdDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePwdDialog.Designer.cs">
+      <DependentUpon>UpdatePwdDialog.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBuyer.resx">
+      <DependentUpon>FormBuyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangePwd.resx">
+      <DependentUpon>FormChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangePwdAdmin.resx">
+      <DependentUpon>FormChangePwdAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangeUserRole.resx">
+      <DependentUpon>FormChangeUserRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeliveryStaff.resx">
+      <DependentUpon>FormDeliveryStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDelUser.resx">
+      <DependentUpon>FormDelUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MF.resx">
-      <DependentUpon>MF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -92,6 +196,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UpdatePwdDialog.resx">
+      <DependentUpon>UpdatePwdDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="jingdieDataSet.xsc">
+      <DependentUpon>jingdieDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="jingdieDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jingdieDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jingdieDataSet.xss">
+      <DependentUpon>jingdieDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,13 +219,69 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SQLServerTest_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\关于 %281%29.png" />
+    <None Include="Resources\关于.png" />
+    <None Include="Resources\关于我们.png" />
+    <None Include="Resources\0041446689710.jpg" />
+    <None Include="Resources\大logo.png" />
+    <None Include="Resources\编辑.png" />
+    <None Include="Resources\password_24px_1169936_easyicon.net.png" />
+    <None Include="Resources\information_24px_1154431_easyicon.net.png" />
+    <None Include="Resources\工作界面_0002s_0001_标题栏1.png" />
+    <None Include="Resources\delivery_25.963488843813px_1173529_easyicon.net.png" />
+    <None Include="Resources\工作界面_0000s_0003_功能选择面板.png" />
+    <None Include="Resources\出库24.png" />
+    <None Include="Resources\入库24.png" />
+    <None Include="Resources\查询24.png" />
+    <None Include="Resources\用户24.png" />
+    <None Include="Resources\配送24.png" />
+    <None Include="Resources\采购24.png" />
+    <None Include="Resources\采购16.png" />
+    <None Include="Resources\工作界面_0002s_0008_帮助.png" />
+    <None Include="Resources\工作界面_0002s_0007_帮助图标1.png" />
+    <None Include="Resources\工作界面_0002s_0006_帮助图标_press.png" />
+    <None Include="Resources\工作界面_0002s_0005_工具.png" />
+    <None Include="Resources\工作界面_0002s_0004_工具图标.png" />
+    <None Include="Resources\工作界面_0002s_0003_工具图标_press.png" />
+    <None Include="Resources\工作界面_0002s_0002_系统.png" />
+    <None Include="Resources\工作界面_0002s_0001_系统图标.png" />
+    <None Include="Resources\工作界面_0002s_0000_系统图标_press.png" />
+    <None Include="Resources\工作界面_0001s_0003_打印图标.png" />
+    <None Include="Resources\工作界面_0001s_0002_删除图标.png" />
+    <None Include="Resources\工作界面_0001s_0001_撤销图标.png" />
+    <None Include="Resources\工作界面_0001s_0000_文件图标.png" />
+    <None Include="Resources\工作界面_0000s_0001_展开图标.png" />
+    <None Include="Resources\工作界面_0000s_0000_收起图标.png" />
+    <None Include="Resources\工作界面_0002s_0007_帮助图标.png" />
+    <None Include="Resources\工作界面_0002s_0001_标题栏.png" />
+    <None Include="Resources\工作界面_0000s_0001s_0001_输入框2.png" />
+    <None Include="Resources\工作界面_0002s_0002_虚化背景.png" />
+    <None Include="Resources\工作界面_0000s_0000s_0000_login_press.png" />
+    <None Include="Resources\工作界面_0000s_0000s_0001_login.png" />
+    <Content Include="image\工作界面_0000s_0000s_0000_login_press.png" />
+    <Content Include="image\工作界面_0000s_0000s_0001_login.png" />
+    <Content Include="image\工作界面_0002s_0001_标题栏.png" />
+    <Content Include="image\工作界面_0002s_0002_虚化背景.png" />
     <None Include="Resources\vkom.png" />
-    <Content Include="vkom.png" />
+    <Content Include="image\vkom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
